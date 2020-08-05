@@ -1,0 +1,11 @@
+<section class="creator"
+         (click)=ShowMore()
+         (clickOutside)=HideMore()
+         [ngClass]="show ? 'creator-open' : ''">
+  <label class="creator__title">
+    <input type="text" class="creator__input" placeholder="Title" #title>
+  </label>
+  <label class="creator__description">
+    <input type="text" class="creator__input" placeholder="Take a note..." #descr>
+  </label>
+</section>

@@ -1,0 +1,51 @@
+.edit {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid ghostwhite;;
+  border-radius: 5px;
+
+  &__input {
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    color: ghostwhite;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    &::placeholder {
+      color: ghostwhite;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    width: 200px;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 1px solid ghostwhite;
+    border-radius: 3px;
+    color: ghostwhite;
+    cursor: pointer;
+    transition: all .5s ease;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+
+  }
+
+  &__submit {
+    background: limegreen;
+  }
+
+  &__back {
+    background: darkred;
+  }
+}

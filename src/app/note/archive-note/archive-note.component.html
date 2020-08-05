@@ -1,0 +1,15 @@
+<div class="archive">
+  <h3 class="archive__title">
+    Archive
+  </h3>
+  <div class="archive__notes">
+       <div class="archive__note"
+       *ngFor="let note of archiveNotes; let index = index;">
+        <div class="archive__note-title">{{note.title}}</div>
+        <div class="archive__note-descr">{{note.descr}}</div>
+        <div class="archive__action" (click)=backToNotes(index)>
+        <fa-icon [icon]="faUndo"></fa-icon>
+      </div>
+  </div>
+  </div>
+</div>

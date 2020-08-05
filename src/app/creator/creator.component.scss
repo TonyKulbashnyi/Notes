@@ -1,0 +1,38 @@
+.creator {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid ghostwhite;;
+  border-radius: 5px;
+
+  &-open {
+    & .creator__title {
+      display: block;
+    }
+  }
+
+  &__input {
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    color: ghostwhite;
+    outline: none;
+
+    &::placeholder {
+      color: ghostwhite;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: none;
+  }
+
+  &__description {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+}

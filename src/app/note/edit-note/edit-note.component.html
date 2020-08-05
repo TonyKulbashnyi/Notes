@@ -1,0 +1,14 @@
+
+<div class="edit">
+  <label>
+    <input type="text" [value]="note.title || ''" class="edit__input" #title>
+  </label>
+  <label>
+    <input type="text" [value]="note.descr || ''" class="edit__input" #descr>
+  </label>
+  <div class="edit__buttons">
+    <button class="edit__submit edit__button" (click)=updateNote() routerLink="/">Submit</button>
+    <button class="edit__back edit__button" routerLink="/">Back</button>
+  </div>
+</div>
+

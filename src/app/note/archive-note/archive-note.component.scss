@@ -1,0 +1,72 @@
+.archive {
+  width: 70%;
+  margin: 0 auto;
+
+  &__notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+
+  }
+
+  &__note {
+    position: relative;
+    padding: 10px;
+    border: 1px solid ghostwhite;;
+    border-radius: 5px;
+    color: ghostwhite;
+    min-height: 100px;
+    transition: all .5s ease;
+    background-color: #3a3b4a;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      z-index: 1;
+
+      .archive__action {
+        display: flex;
+      }
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+
+    &-descr {
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding-top: 10px;
+    }
+  }
+
+  &__title {
+    color: ghostwhite;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: rgba(11, 19, 11, .4);
+
+    & fa-icon {
+      font-size: 1.5rem;
+      color: ghostwhite;
+    }
+
+
+  }
+}
+
