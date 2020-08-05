@@ -1,3 +1,9 @@
+# For server used: https://www.npmjs.com/package/json-server
+
+# For run server:  npm install -g json-server
+
+# and then:  json-server --watch db.json
+
 # JsmpAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
